@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Реализуйте тело функции smallestDivisor, используя итеративный процесс. Эта функция должна находить наименьший делитель заданного числа.
+    //
+    //     Доп. условия: число, передаваемое в функцию, больше нуля; делитель должен быть больше единицы, за исключением случая, когда аргументом является единица (наименьшим делителем которой является также единица).
+
+    const smallestDivisor = (num) => {
+        if (num > 0) {
+            const sDiv = (num, div) => {
+                if (div > num / 2) {
+                    return num;
+                }
+                else if (num % div === 0) {
+                    return div;
+                }
+                return sDiv(num, div + 1);
+            };
+            return sDiv(num, 2);
+        }
+    };
+
+    console.log(smallestDivisor(15)); // 3
+    console.log(smallestDivisor(17)); // 17
+</script>
+</body>
+</html>
