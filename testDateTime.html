@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // В этом задании в нашу функцию testDateTime передаются две строки вида "03 November 2017 04:17".
+    //     Вам нужно превратить строки в даты, сравнить их. Для той, что больше получить день недели и вернуть его из функции.
+    //
+    //     Название дня недели должно быть по-русски, с большой буквы, например: "Понедельник".
+
+    const testDateTime = (date1, date2) => {
+
+        const weekDays = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+
+        let dateN1 = new Date(date1);
+        let dateN2 = new Date(date2);
+        return dateN1 > dateN2 ? weekDays[dateN1.getDay()] : weekDays[dateN2.getDay()];
+    };
+
+    document.write(testDateTime("19 October 1909 10:27", "28 March 1909 00:59"));
+    console.log(testDateTime("04 August 1909 00:24", "03 November 1909 06:54"));
+</script>
+</body>
+</html>
