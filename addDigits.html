@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <script>
+    // Реализуйте и экспортируйте по умолчанию функцию addDigits, которая работает следующим образом:
+    //
+    //     Дано неотрицательное целое число num.
+    //     Складывать все входящие в него цифры до тех пор, пока не останется одна цифра.
+    //
+    //     Для числа 38 процесс будет выглядеть так:
+    //
+    //     3 + 8 = 11
+    //     1 + 1 = 2
+
+    const number = (digits) => {
+        let sum = 0;
+        const str = String(digits);
+
+        for (let i = 0; i < str.length; i += 1) {
+            sum += +str[i];
+        }
+        if (sum >= 10) {
+            return number(sum);
+        }
+        return sum;
+    };
+
+    const addDigits = num => number(num);
+
+    // export default addDigits;
+
+    console.log(addDigits(1234));
+    console.log(addDigits(99999999999));
+    </script>
+</body>
+
+</html>
