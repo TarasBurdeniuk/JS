@@ -1,5 +1,6 @@
 // Напишите функцию formatDate(date), которая выводит дату date в формате дд.мм.гг:
 // P.S. Обратите внимание, ведущие нули должны присутствовать, то есть 1 января 2001 должно быть 01.01.01, а не 1.1.1.
+
 let date = new Date;
 
 const formatDate = (date) => {
@@ -24,4 +25,4 @@ const formatDate = (date) => {
     return day + '.' + mm + '.' + year;
 };
 
-    console.log(formatDate(date));
+console.log(formatDate(date));
