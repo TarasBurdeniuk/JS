@@ -1,7 +1,6 @@
 // Реализуйте функцию isPowerOfThree, которая определяет, является ли переданное число натуральной степенью тройки. Например, число 27 это третья степень (33), а 81 это четвертая (34).
 
 const isPowerOfThree = (number) => {
-    // return (number / 3 % 3 === 0 || 3 % number === 0);
     if (number % 3 === 0) {
         return isPowerOfThree(number / 3);
     }
