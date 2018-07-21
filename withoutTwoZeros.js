@@ -13,7 +13,7 @@ const withoutTwoZeros = (zero, one) => {
 
     let allVar = factorial(zero + one);
 
-    let withoutRepeat = allVar / ((factorial((one + zero) - zero) * factorial(zero)));
+    let withoutRepeat = allVar / (factorial(one - zero)) * factorial(zero);
 
     return (zero === 2) ? withoutRepeat - (zero + one - 1) : withoutRepeat;
 };
