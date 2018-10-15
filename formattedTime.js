@@ -1,7 +1,7 @@
 // Реализуйте и экспортируйте по умолчанию функцию, которая принимает на вход количество минут (прошедших с начала суток) и возвращает строку, являющуюся временем в формате чч:мм.
 
 
-const formattedTime = (number) => {
+const formattedTime = number => {
     let min = (number >= 60) ? (number % 60) + '' : number + '';
 
     let h = Math.floor(number / 60) + '';

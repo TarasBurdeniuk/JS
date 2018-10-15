@@ -6,11 +6,9 @@
 </head>
 <body>
 <script>
-    // Реализуйте функцию squareOfSum, которая находит квадрат суммы двух чисел по формуле: a² + 2 * a * b + b².
+    // Реализуйте функцию squareOfSum, которая находит квадрат суммы двух чисел по формуле: a^2 + 2 * a * b + b^2.
 
-    const squareOfSum = (a, b) => {
-        return ((Math.pow(a, 2)) + 2 * a * b + (Math.pow(b, 2)))
-    };
+    const squareOfSum = (a, b) => (Math.pow(a, 2)) + 2 * a * b + (Math.pow(b, 2));
 
 
     console.log(squareOfSum(1, 10)); // 121

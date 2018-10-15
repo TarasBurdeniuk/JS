@@ -4,7 +4,7 @@
 //
 // Напишите функцию, проверяющую является ли номер счастливым (номер может быть как числового, так и строкового типа. Функция должна возвращать true, если билет счастливый, или false, если нет.
 
-const isHappyTicket = (number) => {
+const isHappyTicket = number => {
     number = String(number);
     let a = number.substring(0, 3);
 

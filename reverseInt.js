@@ -1,6 +1,6 @@
 // Реализуйте и экспортируйте по умолчанию функцию reverseInt, которая переворачивает цифры в переданном числе и возвращает новое число.
 
-const reverseInt = (number) => {
+const reverseInt = number => {
 
     let rev = String(number).split('');
     let result = [];

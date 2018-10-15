@@ -12,9 +12,9 @@ const diff = (a, b) => {
     return (Math.abs(a - b) > 180) ? 360 - Math.abs(a - b) : Math.abs(a - b)
 };
 
-console.log(diff(0, 45));
-console.log(diff(0, 180));
-console.log(diff(0, 190));
-console.log(diff(120, 280));
-console.log(diff(160, 20));
-console.log(diff(200, 2));
+console.log(diff(0, 45)); // 45
+console.log(diff(0, 180)); // 180
+console.log(diff(0, 190)); // 170
+console.log(diff(120, 280)); // 160
+console.log(diff(160, 20)); // 140
+console.log(diff(200, 2)); // 162

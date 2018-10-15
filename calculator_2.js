@@ -32,4 +32,4 @@ powerCalc.addMethod("**", function (a, b) {
     return Math.pow(a, b);
 });
 
-console.log(calc.calculate("3 - 1")); // 10
+console.log(calc.calculate("3 - 1")); // 2

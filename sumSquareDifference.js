@@ -7,15 +7,15 @@
 // Напишите функцию sumSquareDifference, которая принимает аргумент n и возвращает разницу между квадратом суммы и суммой квадратов первых n натуральных чисел.
 
 
-function sumSquareDifference(number) {
-    let a = 0;
-    let b = 0;
+const sumSquareDifference = number => {
+    let a = 0,
+        b = 0;
     for (let i = 1; i <= number; i++) {
-        a += Math.pow(i, 2);
+        a += i ** 2;
         b += i;
     }
-    return Math.pow(b, 2) - a;
-}
+    return (b ** 2) - a;
+};
 
 console.log(sumSquareDifference(3));
 console.log(sumSquareDifference(5));

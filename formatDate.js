@@ -5,13 +5,12 @@ let date = new Date;
 
 const formatDate = (date) => {
 
-    //     options = {
-    //         year: '2-digit',
-    //         month: '2-digit',
-    //         day: '2-digit',
-    //     };
-    //     return date.toLocaleString("en-US", options);
-    // };
+        // options = {
+        //     year: '2-digit',
+        //     month: '2-digit',
+        //     day: '2-digit',
+        // };
+        // return date.toLocaleString("en-US", options); // this version return month/day/year
 
     let day = date.getDate();
     if (day < 10)

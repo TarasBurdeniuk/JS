@@ -1,7 +1,7 @@
 // Реализуйте и экспортируйте по умолчанию функцию invertCase, которая меняет в строке регистр каждой буквы на противоположный.
 
 
-const invertCase = (string) => {
+const invertCase = string => {
     let result = '';
     for (let i = 0; i < string.length; i++) {
         if (string[i].toUpperCase() === string[i]) {
