@@ -2,3 +2,7 @@ te.js
 cal.html
 .DS_Store
 /.idea
+package-lock.json
+/node_modules
+.eslintrc.json
+package.json
